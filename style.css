@@ -1,0 +1,70 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #E5E7EB;
+    min-height: 100vh;
+    background: linear-gradient(300deg, #000000, #110c18, #050b16, #000000);
+    background-size: 200% 200%;
+    animation: gradient-flow 25s ease-in-out infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6B7280;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden; 
+    border-right: .15em solid #F87171; /* The red caret */
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: 
+        typing-loop 4.5s steps(70, end) infinite,
+        blink-caret .75s step-end infinite;
+    font-weight: 700; /* bold */
+    font-style: italic; /* italic */
+}
+
+@keyframes typing-loop {
+    0% { width: 0 }
+    80% { width: 100% }
+    100% { width: 0 }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F87171; }
+}
+
+.typewriter-wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 1.25rem;
+}
+
+.animated-gradient {
+    background-size: 200% auto;
+    animation: gradient-flow-fast 4s ease-in-out infinite;
+}
+
+@keyframes gradient-flow-fast {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
